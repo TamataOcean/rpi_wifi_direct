@@ -10,25 +10,20 @@ Working with Debian Hypriot OS (include Docker): https://downloads.hypriot.com
 ```
 sudo -s
 
-wget -P /home/pirate https://raw.githubusercontent.com/jancelin/rpi_wifi_direct/master/raspberry_pi3/install_wifi_direct_rpi3.sh; chmod +x /home/pirate/install_wifi_direct_rpi3.sh; bash -x /home/pirate/install_wifi_direct_rpi3.sh
+wget -P /home/pirate https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi3/install_wifi_direct_rpi3.sh; chmod +x /home/pirate/install_wifi_direct_rpi3.sh; bash -x /home/pirate/install_wifi_direct_rpi3.sh
 ```
 
 * reboot
 * enjoy
 ________________________________________________________
 
-* After reboot, connect your pc, phone,... to the hotspot wifi "GeoPoppy_Pi3"
-* password: geopoppy
-* ip of raspberry pi wifi : 172.24.1.1
+* After reboot, connect your pc, phone,... to the hotspot wifi "Tamata_Workshop"
+* password: workshop
+* ip of raspberry pi wifi : 172.24.1.10
 * hotplug ethernet
 * hotspot wifi
 
 ________________________________________________________
 
-**Full project "GéoPoppy" a nano-server GIS at**
-
-https://github.com/jancelin/geo-poppy/blob/master/install/README_install_geopoppy.md
-
-https://github.com/jancelin/geo-poppy
 
 
