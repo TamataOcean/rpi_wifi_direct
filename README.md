@@ -19,7 +19,7 @@ ________________________________________________________
 
 * After reboot, connect your pc, phone,... to the hotspot wifi "Tamata_Workshop"
 * password: workshop
-* ip of raspberry pi wifi : 172.24.1.10
+* ip of raspberry pi wifi : 172.24.1.1
 * hotplug ethernet
 * hotspot wifi
 
