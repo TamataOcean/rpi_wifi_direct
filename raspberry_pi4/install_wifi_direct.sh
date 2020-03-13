@@ -30,5 +30,7 @@ sudo sh -c "iptables-save > /etc/iptables.ipv4.nat" &&
 #sudo mv /etc/rc.local /etc/rc.local.bak &&
 sudo wget --no-check-certificate -P /etc https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi4/rc.local &&
 sudo chmod +x  /etc/rc.local &&
-sudo service hostapd start 
+sudo systemctl unmask hostapd
+sudo systemctl enable hostapd
+sudo systemctl start hostapd
 sudo service dnsmasq start
