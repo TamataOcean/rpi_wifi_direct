@@ -6,7 +6,9 @@ sudo apt-get update &&
 #sudo apt-get upgrade &&
 sudo apt-get install -y dnsmasq hostapd &&
 sudo wget --no-check-certificate -P /etc https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi4/dhcpcd.conf &&
-sudo wget --no-check-certificate -P /etc/network/interfaces.d https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi4/wlan0 &&
+sudo mv /etc/network/interfaces /etc/network/interfaces.bak &&
+sudo wget --no-check-certificate -P /etc/network/interfaces https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi4/interfaces &&
+# sudo wget --no-check-certificate -P /etc/network/interfaces.d https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi4/wlan0 &&
 sudo service dhcpcd restart &&
 sudo ifdown wlan0; sudo ifup wlan0 &&
 sudo wget --no-check-certificate -P /etc/hostapd https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi4/hostapd.conf &&
