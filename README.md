@@ -9,7 +9,9 @@ Working with Debian Hypriot OS (include Docker): https://downloads.hypriot.com
 
 ```
 sudo -s
-wget -P /home/pi https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi4/install_wifi_direct.sh; chmod +x /home/pi/install_wifi_direct.sh; bash -x /home/pi/install_wifi_direct.sh
+mkdir /home/pi/code
+cd /home/pi/code
+wget -P /home/pi/code https://raw.githubusercontent.com/TamataOcean/rpi_wifi_direct/master/raspberry_pi4/install_wifi_direct.sh; chmod +x /home/pi/code/install_wifi_direct.sh; bash -x /home/pi/code/install_wifi_direct.sh
 ```
 
 * reboot
